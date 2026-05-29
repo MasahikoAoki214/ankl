@@ -1,73 +1,113 @@
 @charset "UTF-8";
 
+/* Base (リセット・共通設定） */
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* Campaign Banner */
 .campaign {
-  background-color: #BC9782;
-  color: #fff;
-  text-align: center;
-  padding: 14px;
-  font-size: 16px;
+    background-color: #BC9782;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
 }
 
-.titleBox {
-  border-bottom: 1px solid #AAA;
-  padding: 22px 0 20px; 
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+/* Header Area */
+.title-box {
+    border-bottom: 1px solid #AAA;
+    padding: 22px 0 20px; 
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 34px;
 }
 
 .title {
-  width: 800px;
+    width: 800px;
 }
 
 .subtitle {
-  color: #808080;
+    color: #808080;
 }
 
-.headerBox {
-  display: flex;
-  justify-content: center;
+.header-box {
+    display: flex;
+    justify-content: center;
 }
-.logoBox {
-  width: 370px;
+.logo-box {
+    width: 370px;
 }
 
 .header-icons {
-  display: flex;
-  gap: 20px;
-  justify-content: end;
-  margin-bottom: 27px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 27px;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .logo img {
-  width: 370px;
+    width: 370px;
 }
 
 .header-menu {
-  display: flex;
-  gap: 75px;
-  justify-content: center;
-  margin-top: 80px;
-  border-bottom: 1px solid #AAA;
-  padding-bottom: 95px;
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    margin-top: 80px;
+    border-bottom: 1px solid #AAA;
+    padding-bottom: 95px;
 }
 
 .header-menu a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+/* Product Section (PICK UP ITEMS & おすすめの商品) */
+.pickup-title {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 101px;
+}
+
+.pickup-title p {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.pickup-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* 全体・グリッド配置の設定 */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 横に３等分して並べる */
+    column-gap: 56px;                      /* 横のアイテム同士の間隔 */
+    row-gap: 172px;                        /* 縦のアイテム同士の間隔 */
+    max-width: 1000px;                     /*全体の最大幅*/
+    margin: 0 auto;                        /*全体の中央に配置*/
+    padding: 20px;
+}
+
+/* 各アイテムの共通設定 */
+.item {
+    display: flex;
+    flex-direction: column;
 }
