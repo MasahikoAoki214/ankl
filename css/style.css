@@ -14,16 +14,16 @@ ul {
 
 /* Campaign Banner */
 .campaign {
-    background-color: #BC9782;
-    color: #fff;
-    text-align: center;
     padding: 14px;
+    background-color: #bc9782;   /* カラーコードを小文字に統一 */
+    color: #ffffff;              /* 6桁に統一 */
+    text-align: center;
     font-size: 16px;
 }
 
 /* Header Area */
 .title-box {
-    border-bottom: 1px solid #AAA;
+    border-bottom: 1px solid #aaaaaa;
     padding: 22px 0 20px; 
     display: flex;
     justify-content: center;
@@ -68,7 +68,7 @@ ul {
     gap: 75px;
     justify-content: center;
     margin-top: 80px;
-    border-bottom: 1px solid #AAA;
+    border-bottom: 1px solid #aaaaaa;
     padding-bottom: 95px;
 }
 
@@ -110,4 +110,138 @@ ul {
 .item {
     display: flex;
     flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+/* 9つの商品全てのブランド名を一括で変更 */
+.brand-name li:first-child p {
+    font-size: 16px;
+    color: #cb9b6e;
+}
+
+/* 9つの商品名を一括で変更 */
+.brand-name li:last-child p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* 画像を囲む枠の設定 */
+.image-wrapper {
+    width: 315px;
+    height: 315px;
+    margin-bottom: 16px;  /* 画像とブランド名の間隔 */
+}
+
+/* 枠の中にある実際の画像の設定 */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;   画像が枠に収まるように調整 */
+}
+
+/* 元の価格に取り消し線を入れる */
+.original-price-text {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: line-through;      /* 取り消し線を入れる */
+    text-decoration-color: #ff0000;  /* 取り消し線の色を赤にする */
+}
+
+/* セール価格・通常価格 */
+.discount-price {
+    color: #000000;
+    font-size: 16px;
+}
+
+/* 商品一覧 */
+.pickup-title-2 p{
+    /* 配置とスタイルの設定 */
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+
+    margin: 80px auto 130px auto;
+
+    /* 文字の配置設定 */
+    text-align: center;
+    line-height: 50px;
+
+    /* 見た目・色の設定 */
+    background-color: #ffffff;
+    color:#aaaaaa;
+    border: 1px solid #aaaaaa;  /* グレーの枠線*/
+}
+
+.campaign-section p {
+    padding: 14px;
+    background-color: #bc9782;   
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Footer Area */ 
+.footer-nav {
+    display: flex;             /*3つのulを横並びにする*/
+    justify-content: center;  /* 全体を中央に配置する*/
+    gap: 200px;
+    margin-top: 135px;
+    margin-bottom: 135px;
+}
+
+/* 3つのul共通の初期リセット */
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 各リストの一番上（CATEGORY, MENU, SUPPORT）の設定 */
+.footer-nav ul li:first-child {
+    color: #bc9782;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+/* 2番目以降のメニューの文字（リードディフューザーなど）の設定 */
+.footer-nav li:not(:first-child) {
+    color: #000000;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+        
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px; 
+
+    border-top: 1px solid #aaaaaa; 
+
+    padding-top: 95px; 
+    padding-bottom: 40px;
+    padding-right: 18%;
+    padding-left: 18%;
+}
+
+/* 中央のコピーライト */
+.copyright {
+    position: static;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-spacer {
+    width: 120px;
+    visibility: hidden;
 }

@@ -37,12 +37,13 @@
       </div>
     </header>
 
-    <section class="pickup">
-      <div class="pickup-title">
-        <h1>PICK UP ITEMS</h1>
-        <p>おすすめの商品</p>
-      </div>
-    </section>
+    <main>
+      <section class="pickup">
+        <div class="pickup-title">
+          <h1>PICK UP ITEMS</h1>
+          <p>おすすめの商品</p>
+        </div>
+      </section>
   
       <div class="product-container">
 
@@ -57,11 +58,9 @@
             <p class="rating-img">
               <img src="./img/星グループ.png" alt="星5つ" />
             </p>
-            <p class="price-image">
-              <img src="./img/11.200-.png" alt="11,200円" />
-            </p>
-            <p class="original-price">
-              <img src="./img/￥20,000.png" alt="20,000円" />
+            <p class="price-box">
+              <span class="original-price-text">￥20,000</span>
+              <span class="discount-price">￥11,200</span>
             </p>
         </div>
 
@@ -77,11 +76,9 @@
             <p class="rating-img">
               <img src="./img/星グループ.png" alt="星5つ" />
             </p>
-            <p class="price-image">
-              <img src="./img/11.200-.png" alt="11,200円" />
-            </p>
-            <p class="original-price">
-              <img src="./img/￥9,000.png" alt="9,000円" />
+            <p class="price-box">
+              <span class="original-price-text">￥11,200</span>
+              <span class="discount-price">￥9,000</span>
             </p>
           </div>
 
@@ -93,7 +90,9 @@
               <li><p>Koukyuu Bottle</p></li>
               <li><p>高級感漂うインテリアボトル</p></li>
             </ul>
-            <p class="price-image">¥11,200</p>
+            <p class="price-box">
+              <span class="discount-price">￥11,200</span>
+            </p>
           </div>
 
           <div class="item">
@@ -104,7 +103,9 @@
               <li><p>Plants</p></li>
               <li><p>丸い葉っぱがキュートなモンステラ</p></li>
             </ul>
-            <p class="price-image">¥6,100</p>
+            <p class="price-box">
+              <span class="discount-price">￥6,100</span>
+            </p>
           </div>
 
           <div class="item">
@@ -115,7 +116,9 @@
               <li><p>Candle</p></li>
               <li><p>地中海を連想するボタニカルキャンドル</p></li>
             </ul>
-            <p class="price-image">¥8,000</p>
+            <p class="price-box">
+              <span class="discount-price">￥8,000</span>
+            </p>
           </div>
 
           <div class="item">
@@ -126,7 +129,9 @@
               <li><p>SOFA CUSHION</p></li>
               <li><p>シンプルな部屋に最適なリーフクッション</p></li>
             </ul>
-            <p class="price-image">¥8,000</p>
+            <p class="price-box">
+              <span class="discount-price">￥8,000</span>
+            </p>
           </div>
 
           <div class="item">
@@ -137,7 +142,9 @@
               <li><p>Candle</p></li>
               <li><p>週末の疲れを癒すリラクシングアロマ</p></li>
             </ul>
-            <p class="price-image">¥8,500</p>
+            <p class="price-box">
+              <span class="discount-price">￥8,500</span>
+            </p>
           </div>
 
           <div class="item">
@@ -148,7 +155,9 @@
               <li><p>Aroma Diffuser</p></li>
               <li><p>オシャレなウッディーアロマポット</p></li>
             </ul>
-            <p class="price-image">¥11,000</p>
+            <p class="price-box">
+              <span class="discount-price">￥11,000</span>
+            </p>
           </div>
 
           <div class="item">
@@ -159,48 +168,65 @@
               <li><p>Plants</p></li>
               <li><p>鮮やかな緑のポリシャスフレスビー</p></li>
             </ul>
-            <p class="price-image">¥5,000</p>
+            <p class="price-box">
+              <span class="discount-price">￥5,000</span>
+            </p>
           </div>
       </div>
 
-          <div>商品一覧</div>
+          <section class="pickup-title-2">
+            <p>商品一覧</p>
+          </section>
 
-          <div>はじめてのお買い物で使えるクーポン配布中！</div>
+          <section class="campaign-section">
+            <p>はじめてのお買い物で使えるクーポン配布中！</p>
+          </section>
       </div>
     </main>
 
     <footer>
-      <ul>
-        <li>CATEGORY</li>
-        <li>リードディフューザー</li>
-        <li>キャンドル</li>
-        <li>ソファクション</li>
-        <li>ブランツ</li>
-        <li>アロマディフューザー</li>
-      </ul>
-      <ul>
-        <li>MENU</li>
-        <li>マイアカウント</li>
-        <li>お気に入り</li>
-        <li>カートを見る</li>
-        <li>アングルブログ</li>
-        <li>最新のお知らせ</li>
-      </ul>
-      <ul>
-        <li>SUPPORT</li>
-        <li>利用規約</li>
-        <li>ご利用ガイド</li>
-        <li>お問い合わせ</li>
-        <li>プライバシーポリシー</li>
-        <li>ダウンロード</li>
-      </ul>
+      <section class="footer-nav">
+        <ul>
+          <li>CATEGORY</li>
+          <li>リードディフューザー</li>
+          <li>キャンドル</li>
+          <li>ソファクション</li>
+          <li>ブランツ</li>
+          <li>アロマディフューザー</li>
+        </ul>
+        <ul>
+          <li>MENU</li>
+          <li>マイアカウント</li>
+          <li>お気に入り</li>
+          <li>カートを見る</li>
+          <li>アングルブログ</li>
+          <li>最新のお知らせ</li>
+        </ul>
+        <ul>
+          <li>SUPPORT</li>
+          <li>利用規約</li>
+          <li>ご利用ガイド</li>
+          <li>お問い合わせ</li>
+          <li>プライバシーポリシー</li>
+          <li>ダウンロード</li>
+        </ul>
+      </section>
+    
 
-      <div class="item">
-        <img src="./img/icon4.png" alt="">
-      </div>
+<div class="footer-bottom">
 
-      <div>©2022&nbsp;TCD</div>
-      </div>
+  <div class="sns-logo">
+    <img src="./img/icon4.png" alt="公式SNSアイコン" />
+  </div>
+
+  <div class="copyright">
+    <p>©2022&nbsp;TCD</p>
+  </div>
+
+  <div class="footer-spacer"></div>
+
+</div>
+
     </footer>
   </body>
 </html>
